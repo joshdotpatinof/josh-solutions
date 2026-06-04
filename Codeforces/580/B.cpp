@@ -1,4 +1,5 @@
 // written by josh.patinof June 4, 2026
+// B. Kefa and Company - https://codeforces.com/problemset/problem/580/B
 #include <bits/stdc++.h>
 
 using namespace std;
