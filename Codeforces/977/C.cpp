@@ -1,3 +1,5 @@
+// written by josh.patinof June 4, 2026
+// C. Less or Equal - https://codeforces.com/problemset/problem/977/C
 #include <bits/stdc++.h>
     
 using namespace std;
