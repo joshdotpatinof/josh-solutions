@@ -7,13 +7,8 @@ using ll = long long;
 
 void solve() {
     ll n, k; cin >> n >> k;
-    // find an x that gives the minimum(?) diff |x - K| 0 <= x <= N
-    ll min_diff = LONG_LONG_MAX;
-    cout << min_diff << endl;
-
-    for (ll x = 0; x <= n; ++x){
-               
-    }
+    n %= k;
+    cout << min(n, k - n) << endl;
 }
 
 int main() {
