@@ -101,5 +101,4 @@ A compilation of my solutions to competitive programming platforms :P (Starting 
 - [ ] [2019 ICPC Asia-Manila - L](https://codeforces.com/group/qyGoFplgAA/contest/656704/problem/L)
 - [ ] [2019 ICPC Asia-Manila - M](https://codeforces.com/group/qyGoFplgAA/contest/656704/problem/M)
 
-> Track platform and problem only. Move items here as soon as you identify a problem to revisit.
-
+> Track platform and problem only. Move items here as soon as you identify a problem to revisit
