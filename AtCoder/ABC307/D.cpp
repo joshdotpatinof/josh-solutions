@@ -1,0 +1,43 @@
+// written by josh.patinof
+#include <bits/stdc++.h>
+using namespace std;
+
+using ll = long long;
+#define fast_io ios_base::sync_with_stdio(false); cin.tie(NULL);
+
+void solve() {
+    int n; cin >> n;
+    string s; cin >> s;
+    stack<int> stk;
+    vector<char> ans;
+    for (int i = 0; i < n; ++i){
+        if (s[i] == '('){
+            stk.push(ans.size());
+            ans.push_back(s[i]);
+        } else if (s[i] == ')'){
+            if (!stk.empty()){
+                int start_idx = stk.top();
+                stk.pop();
+                ans.resize(start_idx);
+            } else {
+                ans.push_back(s[i]);
+            }
+        } else {
+            ans.push_back(s[i]);
+        }
+    }    
+    for (char c: ans){
+        cout << c;
+    }
+    cout << endl;
+}
+
+int main() {
+    fast_io;
+    //int t = 1;
+    //cin >> t;
+    //while (t--) {
+    solve();
+    //}
+    return 0;
+}
