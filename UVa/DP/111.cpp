@@ -8,19 +8,22 @@ using ll = long long;
 void solve() {
     int n;
     while (cin >> n){
-        vector<vector<int>> a(n, vector<int>(n));
-        for (int i = 0; i < n; ++i){
-            for (int j = 0; j < n; ++j){
-                cin >> a[i][j];
-            }
-        }
-
-        
+        int l = 0;
+        vector<vector<int>> a;
+        vector<int> row;
+        while (l < n){
+                   
+            l++;
+        }        
     }
 }
 
 int main() {
     fast_io;
+    //int t = 1;
+    //cin >> t;
+    //while (t--) {
     solve();
+    //}
     return 0;
 }

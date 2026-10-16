@@ -16,32 +16,31 @@ void solve() {
         }
     }
     int x; cin >> x;
-    vector<pair<int, int>> pairs;
-    for (auto p : mp[x]){
-        pairs.push_back(p);
-    }
+    vector<pair<int, int>> pairs = mp[x];
 
-    if (pairs.size() <= 0){
+    if (pairs.empty()){
         cout << 0 << endl;
         return;
     }
-    vector<int> ans;
 
     sort(pairs.begin(), pairs.end());
     int min_c = pairs[0].first;
-    int j = 0;
-    while (true){
-        if (pairs[j].first != min_c){
+    vector<int> ans;
+
+    for (const auto& p : pairs){
+        if (p.first == min_c){
+            ans.push_back(p.second);
+        } else {
             break;
         }
-        ans.push_back(pairs[j].second);
-        j++;
     }
     
     sort(ans.begin(), ans.end());
 
-    for (auto ret : ans){
-        cout << ret << " ";
+    cout << ans.size() << endl;
+
+    for (int i = 0; i < (int)ans.size(); ++i){
+        cout << ans[i] << (i + 1 == (int)ans.size() ? "" : " ");
     }
     cout << endl;
 }
